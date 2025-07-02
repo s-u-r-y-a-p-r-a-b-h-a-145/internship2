@@ -1,0 +1,245 @@
+WEB LAYOUT 1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Layout </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #004080;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0066cc;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #ffffff;
+    }
+
+    .flex-card {
+      flex: 1 1 300px;
+      background-color: #e6f0ff;
+      margin: 1rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      background-color: #5e044d;
+    }
+
+    .grid-item {
+      background-color: #eca6f5;
+      /* padding: 1.25rem;
+      border-radius: 8px; */
+      box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #112335;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> Web Layout</h1>
+    <p>Using Flexbox and Grid </p>
+  </header>
+
+  
+
+  <section class="flex-section" id="flex">
+    <div class="flex-card">
+      <h2>What is Flexbox?</h2>
+      <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. Useful for menus, cards, and responsive boxes.</p>
+    </div>
+    <div class="flex-card">
+      <h2>Why Flexbox?</h2>
+      <p>Flexbox helps in aligning and distributing space among items efficiently, especially when the size of items is unknown.</p>
+    </div>
+  
+  </section>
+
+  <section class="grid-section" id="grid">
+    <div class="grid-item">
+      <h3>Grid in Web Design</h3>
+      <p>CSS Grid is a two-dimensional layout system, ideal for complex layouts like galleries, dashboards, and forms.</p>
+    </div>
+    <div class="grid-item">
+      <h3>How It Works</h3>
+      <p>Define rows and columns to control layout placement. Easy to build neat, balanced pages.</p>
+    </div>
+    
+    <div class="grid-item">
+      <h3>Responsive Advantage</h3>
+      <p>Combines with media queries to build fully responsive layouts that adjust to screen size.</p>
+    </div>
+  </section>
+
+  
+
+ 
+</body>
+</html>
+
+WEB LAYOUT 2:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex and Grid </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .flexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2rem;
+      background-color: #e6f7ff;
+      min-height: 300px;
+    }
+
+    .flexItem {
+      width: 100px;
+      height: 100px;
+      background-color: #007acc;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #004d80;
+      margin: 10px;
+    }
+
+    .flexItem:nth-child(5) {
+      order: -1;
+      align-self: flex-start;
+    }
+
+    .gridContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
+      padding: 2rem;
+      background-color: #fff0f5;
+    }
+
+    .gridItem {
+      background-color: #ff80aa;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem;
+      border: 2px solid #cc3366;
+    }
+
+    .gridItem:nth-child(1) {
+      grid-column: 1 / 3;
+    }
+
+    .gridItem:nth-child(5) {
+      grid-row: 2 / 4;
+      grid-column: 3 / 4;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Flex and Grid </h1>
+    
+  </header>
+
+  <section>
+    <h2 style="text-align:center; margin-top: 2rem;">Flex Layout</h2>
+    <div class="flexContainer">
+      <div class="flexItem">1</div>
+      <div class="flexItem">2</div>
+      <div class="flexItem">3</div>
+      <div class="flexItem">4</div>
+      <div class="flexItem">5</div>
+      <div class="flexItem">6</div>
+      <div class="flexItem">7</div>
+      <div class="flexItem">8</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; margin-top: 2rem;">Grid Layout</h2>
+    <div class="gridContainer">
+      <div class="gridItem">1</div>
+      <div class="gridItem">2</div>
+      <div class="gridItem">3</div>
+      <div class="gridItem">4</div>
+      <div class="gridItem">5</div>
+      <div class="gridItem">6</div>
+      <div class="gridItem">7</div>
+      <div class="gridItem">8</div>
+      <div class="gridItem">9</div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
