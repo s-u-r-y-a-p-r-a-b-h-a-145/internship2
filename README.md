@@ -30,5 +30,25 @@ A simple yet modern responsive website built as part of an internship assessment
 
 ---
 
+📚 What I Learned
+How to structure a fully responsive layout with Grid + Flex
+
+Importance of semantic HTML
+
+Mobile-first design principles
+
+Clean code documentation
+
+🧠 Future Improvements
+Add dark mode toggle
+
+Animate UI elements using CSS transitions
+
+Add a contact form (static/Netlify Forms)
+
+Improve accessibility with ARIA tags
+
+
+
 
 
